@@ -12,7 +12,7 @@ Entonces la Vista se encargará de la parte visual de la aplicación. El Modelo,
 También se instalará Express para nuestro sistema de ruteo. Segmentaremos nuestras rutas y controladores para asi renderizar las vistas de acuerdo a nuestras peticiones.
 😎👍✨
 
-Link deployed to Heroku: 
+Link deployed to Heroku: https://patrones-de-disenio.herokuapp.com/
 
 Pd: Proyecto solo en versión desktop
 
