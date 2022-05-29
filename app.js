@@ -8,10 +8,10 @@ en donde estan todas las dependencias de app de terceros q necesitamos*/
 /* require (express nos retorna una funcion, asi que hay que invocarla) */
 const express = require('express');
 
-
 /* En la constante app tendremos todos los framework */
 const app = express();
 
+const port = process.env.PORT || 3000; /* <- variable de entorno */
 
 /* Hace falta aclararle a Express dónde vamos a estar almacenando esos recursos. */
 app.use(express.static('public'));
@@ -37,7 +37,7 @@ app.use('/about', mainRouter);
 
 
 /* Puerto... en este caso buscaremos como localhost:3000 o localhost:3000/about */
-app.listen (3000, () => {
+app.listen (port, () => {
     console.log('Servidor levantado')
 });
 
